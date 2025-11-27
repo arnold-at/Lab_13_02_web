@@ -1,0 +1,93 @@
+.detalle-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.detalle-container h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.detalle-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.detalle-row {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detalle-row:last-child {
+  border-bottom: none;
+}
+
+.detalle-label {
+  font-weight: 600;
+  color: #555;
+  min-width: 150px;
+}
+
+.detalle-value {
+  color: #333;
+  flex: 1;
+}
+
+.detalle-value.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.categoria-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.no-categoria {
+  color: #999;
+  font-style: italic;
+}
+
+.detalle-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.detalle-actions button {
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .detalle-card {
+    padding: 20px;
+  }
+
+  .detalle-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detalle-label {
+    min-width: auto;
+  }
+
+  .detalle-actions {
+    flex-direction: column;
+  }
+
+  .detalle-actions button {
+    width: 100%;
+  }
+}
