@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/categorias")
+@CrossOrigin(origins = "http://localhost:3000") // ← AGREGAR ESTA LÍNEA
 public class CategoriaController {
 
     private final CategoriaRepository repository;
